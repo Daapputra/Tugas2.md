@@ -1,4 +1,6 @@
 # Tugas2.md
+
+```mermaid
 graph TD;
     A[Mulai] --> B[Input A, B, C];
     B --> C[Hitung D = B^2 - 4 * A * C];
@@ -11,3 +13,4 @@ graph TD;
     E --> J[End];
     G --> J[End];
     I --> J[End];
+
