@@ -1,20 +1,20 @@
 # Tugas2.md
 
-# Flowchart Persamaan Kuadrat
+flowchart TD
+    A[Mulai] --> B[Masukkan A, B, C]
+    B --> C[Hitung D]
+    C --> D{D < 0?}
+    D -- Ya --> E[Akar Imajiner]
+    D -- Tidak --> F{D = 0?}
+    F -- Ya --> G[X1 = X2]
+    F -- Tidak --> H[Hitung X1 dan X2]
+    H --> I[Hitung X1]
+    H --> J[Hitung X2]
+    I --> K[X1 = (-B + sqrt(D)) / (2 * A)]
+    J --> L[X2 = (-B - sqrt(D)) / (2 * A)]
+    G --> M[Selesai]
+    K --> M
+    L --> M
+    E --> M
 
-Berikut adalah flowchart untuk menghitung akar-akar persamaan kuadrat menggunakan diskriminan.
-
-```mermaid
-graph TD;
-    A[Mulai] --> B[Input A, B, C];
-    B --> C[Hitung D = B^2 - 4 * A * C];
-    C --> D{D < 0?};
-    D -- Yes --> E[Akar Imajiner];
-    D -- No --> F{D = 0?};
-    F -- Yes --> G[X1 = X2 = -B / 2 * A];
-    F -- No --> H[X1 = (-B + sqrt(D)) / (2 * A)];
-    H --> I[X2 = (-B - sqrt(D)) / (2 * A)];
-    E --> J[End];
-    G --> J[End];
-    I --> J[End];
 
