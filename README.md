@@ -1,5 +1,9 @@
 # Tugas2.md
 
+# Flowchart Persamaan Kuadrat
+
+Berikut adalah flowchart untuk menghitung akar-akar persamaan kuadrat menggunakan diskriminan.
+
 ```mermaid
 graph TD;
     A[Mulai] --> B[Input A, B, C];
